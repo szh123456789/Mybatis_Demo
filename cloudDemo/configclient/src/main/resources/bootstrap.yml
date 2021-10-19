@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: locolhost:8000
+      label: cloudcon
+      name: system
+      profile: dev
