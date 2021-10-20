@@ -2,6 +2,6 @@ spring:
   cloud:
     config:
       uri: locolhost:8000
-      label: cloudcon
+      label: master
       name: system
       profile: dev
