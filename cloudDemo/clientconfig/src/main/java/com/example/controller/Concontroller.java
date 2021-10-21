@@ -10,12 +10,12 @@ public class Concontroller {
 
     @Value("${one}")
     private String one;
-
-    @Value("${two}")
-    private String two;
-
-    @Value("${three}")
-    private String three;
+//
+//    @Value("${two}")
+//    private String two;
+//
+//    @Value("${three}")
+//    private String three;
 
     @RequestMapping("/conn")
     private String  configgit(){

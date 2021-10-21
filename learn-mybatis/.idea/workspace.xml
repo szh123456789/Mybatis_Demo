@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9077955-ad1c-4234-bcfc-fc9229f5512d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringCloud/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringCloud/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/java/com/example/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloudDemo/gitcon/drict-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloudDemo/gitcon/drict-uat.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringCloud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringCloud/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringCloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCloud/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/src/main/java/com/example/controller/Concontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/java/com/example/controller/Concontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloudDemo/configclient/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/java/com/example/controller/Concontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/java/com/example/controller/Concontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloudDemo/clientconfig/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloudDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloudDemo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -54,9 +45,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -95,16 +86,18 @@
       <workItem from="1634541701514" duration="2186000" />
       <workItem from="1634613190609" duration="542000" />
       <workItem from="1634696850085" duration="2020000" />
+      <workItem from="1634738085999" duration="1169000" />
+      <workItem from="1634787697145" duration="570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4748000" />
+    <option name="totallyTimeSpent" value="6487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25625348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2558014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -140,7 +133,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="RestServices" order="11" />
-      <window_info anchor="right" id="JRebel Setup Guide" order="12" visible="true" weight="0.32962757" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="12" visible="true" weight="0.3200216" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
