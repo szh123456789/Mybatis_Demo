@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.userdao">
+
+    <resultMap id="use_t" type="com.example.pojo.user_t">
+        <result column="age" property="ag"/>
+    </resultMap>
+    
+  <insert id="insertus" parameterType="use">
+         insert into user(id,name,age) values(#{id}, #{name}, #{age})
+  </insert>
+<insert id="insertus2" parameterType="map">
+    insert into user(id,name,age) values(#{id}, #{name}, #{age})
+</insert>
+
+    <select id="selectuser" parameterType="use" resultType="use">
+        select * from user
+    </select>
+
+    <select id="selectById" parameterType="int" resultType="use">
+        select * from user where id = #{id}
+    </select>
+
+    <delete id="deleteById" parameterType="use">
+        delete  from user where id=#{id}
+    </delete>
+
+    <update id="updateById" parameterType="use">
+        update user set name=#{name},age=#{age}, bid=#{bid} where id =#{id}
+    </update>
+    
+    <select id="selectbyuset" resultMap="use_t">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="selecttoboss" resultMap="selecttobo">
+        select u.id, u.name, u.age, b.name bname, b.pwd bpwd from user u,boss b where u.bid=b.id
+    </select>
+    <resultMap id="selecttobo" type="com.example.pojo.users">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age"  column="age" />
+        <association property="bos" javaType="com.example.pojo.boss" >
+            <result property="id" column="bid" />
+            <result property="name" column="bname" />
+            <result property="pwd" column="bpwd" />
+        </association>
+    </resultMap>
+
+<!--        <select id="selecttoboss" resultMap="selecttobo2">-->
+<!--            select * from user u-->
+<!--        </select>-->
+<!--        <resultMap id="selecttobo2" type="com.example.pojo.users">-->
+<!--            <association property="bos" column="bid" javaType="com.example.pojo.boss" select="selecttobos" />-->
+<!--        </resultMap>-->
+<!--        <select id="selecttobos" resultType="com.example.pojo.boss">-->
+<!--            select * from boss b where id=#{id}-->
+<!--        </select>-->
+</mapper>

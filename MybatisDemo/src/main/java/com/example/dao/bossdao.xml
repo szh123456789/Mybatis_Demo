@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.bossdao">
+
+    <sql id="selsect-cho">
+        <choose>
+            <when test="_parameter == 0">
+                id =2
+            </when>
+            <when test="_parameter == 1">
+                and id =#{_parameter}
+            </when>
+            <otherwise>
+                and pwd = 123
+            </otherwise>
+        </choose>
+    </sql>
+<insert id="insert" parameterType="com.example.pojo.boss">
+    insert into boss(id,name,pwd) values(#{id},#{name},#{pwd})
+</insert>
+
+    <select id="selecttobos" resultType="com.example.pojo.boss" parameterType="int">
+        select * from boss b
+        <where>
+            <!--        <if test="_parameter == 0">-->
+            <!--             id =2-->
+            <!--        </if>-->
+            <!--            <if test="_parameter !=0" >-->
+            <!--            id = 1-->
+            <!--            </if>-->
+<!--            <include refid="selsect-cho" />-->
+        </where>
+    </select>
+
+    <select id="selectbyfor" resultType="com.example.pojo.boss" parameterType="int">
+        select * from boss b
+        <where>
+            <foreach collection="ids" item="id" open="(" close=")" separator="or">
+                id = #{id}
+            </foreach>
+        </where>
+    </select>
+</mapper>
